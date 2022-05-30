@@ -1,0 +1,12 @@
+{
+    "chromeWebSecurity": false,
+    "video": false,
+    "env": {
+        "FakeRESTApi": "https://fakerestapi.azurewebsites.net/api/v1/",
+        "BookStoreAPI": "https://bookstore.toolsqa.com/BookStore/v1/"
+    },
+    "retries": {
+        "runMode": 2,
+        "openMode": 0
+    }
+}
