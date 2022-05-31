@@ -1,5 +1,4 @@
-
-
+/// <reference types="cypress" />
 
 class Accounts {
 	postAccountsAuthorized(payload) {
