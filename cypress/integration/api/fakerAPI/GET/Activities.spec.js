@@ -1,8 +1,17 @@
 import Activities from "../../../../support/requests/fakerAPI/Activities";
-import { getId } from "../../../../support/factories/api/fakerApi/Activities";
+import {
+    getId
+} from "../../../../support/factories/api/fakerApi/Activities";
 
 
-describe("GET - Activities", () => {
+describe("GET - Activities", {
+    tags: [
+        '@exec',
+        '@get',
+        '@activivities'
+    ]
+
+}, () => {
     context("Validar retornos com sucesso", () => {
         it("Validar retorno sucesso - GET Geral", () => {
             Activities.getActivities().should(response => {
@@ -10,7 +19,7 @@ describe("GET - Activities", () => {
                 expect(response.headers.server).to.eq(getId.headers.server)
             })
         })
-    
+
         it("Validar retorno de uma única atividade", () => {
             Activities.getActivitiesId(getId.primeiroIdSuccess.id).should(response => {
                 expect(response.status).to.eq(200)

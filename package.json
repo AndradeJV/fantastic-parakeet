@@ -1,6 +1,7 @@
 {
   "devDependencies": {
-    "cypress": "^9.7.0"
+    "cypress": "^9.7.0",
+    "cypress-grep": "^2.14.0"
   },
   "name": "fantastic-parakeet",
   "description": "",
